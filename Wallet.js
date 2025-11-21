@@ -75,4 +75,4 @@ class Wallet{
 
 let myWallet = new Wallet('black', 'medium', 100);
 
-console.log(myWallet.checkTotalMoney());
+myWallet.checkTotalMoney();
