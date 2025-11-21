@@ -3,10 +3,10 @@ import js from "@eslint/js";
 
 export default defineConfig([
 	{
-		env: {
-      	node: true,       
-      	es2021: true
-    	},
+		//env: {
+      	//node: true,       
+      	//es2021: true
+    	//},
 		files: ["**/*.js"],
 		plugins: {
 			js,
