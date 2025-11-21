@@ -3,7 +3,7 @@ class Wallet{
     #size;
     #isLost;
     #isOpen;
-    #totalMoney;
+    #total_Money;
 
 
     constructor(color, size, totalMoney = 0){
@@ -11,7 +11,7 @@ class Wallet{
         this.#size = size;
         this.#isLost = false;
         this.#isOpen = false;
-        this.#totalMoney = totalMoney;
+        this.#total_Money = totalMoney;
     }
 
     get color(){
@@ -31,7 +31,7 @@ class Wallet{
     }
 
     get totalMoney(){
-        return this.#totalMoney;
+        return this.#total_Money;
     }
 
     set color(newColor){
@@ -43,7 +43,7 @@ class Wallet{
     }
 
     set totalMoney(amount){
-        this.#totalMoney = amount;
+        this.#total_Money = amount;
     }
 
     toggleLost(){
@@ -52,17 +52,17 @@ class Wallet{
     }
 
     addMoney(newAmount){
-        this.#totalMoney +=  newAmount;
-        return this.#totalMoney;
+        this.#total_Money +=  newAmount;
+        return this.#total_Money;
     }
 
     getMoney(amount){
-        this.#totalMoney -= amount;
-        return this.#totalMoney;
+        this.#total_Money -= amount;
+        return this.#total_Money;
     }
 
     checkTotalMoney(){
-        return `Total money in wallet: $${this.#totalMoney}`;
+        return `Total money in wallet: $${this.#total_Money}`;
     }
 
 
